@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: cover;
+    padding: 0%;
+}
+
+@font-face {
+    src: url(./Tipografia/MADE\ Tommy\ Soft\ Medium\ PERSONAL\ USE.otf);
+    font-family: TomySoftMedium;
+}
+
+@font-face {
+    src: url(./Tipografia/built\ titling\ rg.otf);
+    font-family: built;
+}
+
+.Logo {
+    width: 9rem;
+    height: 3.4rem;
+}
+
+.nav {
+    --bs-nav-link-hover-color: #182718;
+}
+
+.nav-link {
+    font-family: TomySoftMedium;
+    color: #182718;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: #4141AF;
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0.125rem;
+    position: absolute;
+    left: 50%;
+    background: #4141AF;
+    transition: .3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.sec1 {
+    background-image: url(./Multimedia/Fondo_sec1.png);
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.colorsep {
+    background-color: #ededf4;
+}
+
+.sec2 {
+    background-color: #ededf4;
+}
+
+.sec4 {
+    background-color: #ededf4;
+}
+
+
+.titulo {
+    font-family: built;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    color: #265F7F;
+
+}
+
+.mara {
+    font-size: 3rem;
+    color: #265F7F;
+}
+
+.dmara {
+    font-family: TomySoftMedium;
+}
+
+.cart1 {
+    background: rgba(255, 255, 255, .3);
+    backdrop-filter: blur(10px) saturate(2);
+    border: #4141AF solid 1px;
+    border-radius: 4%;
+}
+
+.btn-primary{
+    --bs-btn-bg:  #265F7F;
+    border: none;
+}
+
+.card{
+    background-color: #ededf4;
+    -webkit-box-shadow: -1px 3px 32px 3px rgba(0, 0, 0, 0.62);
+    -moz-box-shadow: -1px 3px 32px 3px rgba(0, 0, 0, 0.62);
+    box-shadow: -1px 3px 32px 3px rgba(0, 0, 0, 0.62);
+}
+
+.wrap {
+    margin: 3.125rem 0;
+    width: 21.875rem;
+}
+
+
+.tarjeta-wrap {
+    margin: 0.625rem;
+    perspective: 800;
+    -webkit-perspective: 800;
+}
+
+.tarjeta {
+    width: 18.75rem;
+    height: 21.875rem;
+    background: #cbcbf0;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: .7s ease;
+    -webkit-box-shadow: -1px 3px 32px 3px rgba(0, 0, 0, 0.62);
+    -moz-box-shadow: -1px 3px 32px 3px rgba(0, 0, 0, 0.62);
+    box-shadow: -1px 3px 32px 3px rgba(0, 0, 0, 0.62);
+    transition: 1.2s;
+}
+
+.tarjeta-wrap:hover .tarjeta {
+    transform: rotateY(180deg);
+}
+
+
+.adelante,
+.atras {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.adelante {
+    width: 100%;
+}
+
+.atras {
+    transform: rotateY(180deg);
+    padding: 0.938rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #182718;
+}
+
+.car1 {
+    background-image: url(./Gif/Asteriagif.gif);
+    background-size: cover;
+}
+
+.car2 {
+    background-image: url(./Gif/Agustingif.gif);
+    background-size: cover;
+}
+
+.car3 {
+    background-image: url(./Gif/Jamesgif.gif);
+    background-size: cover;
+}
+
+.car4 {
+    background-image: url(./Gif/Zaulgif.gif);
+    background-size: cover;
+}
+
+.car5 {
+    background-image: url(./Gif/Heragif.gif);
+    background-size: cover;
+}
+
+.car6 {
+    background-image: url(.//Gif/Gusgif.gif);
+    background-size: cover;
+}
+
+.car7 {
+    background-image: url(./Gif/Octaviogif.gif);
+    background-size: cover;
+}
+
+.car8 {
+    background-image: url(./Gif/Adriangif.gif);
+    background-size: cover;
+}
+
+.car9 {
+    background-image: url(./Gif/Guardiasgif.gif);
+    background-size: cover;
+}
+
+.isep {
+    width: 80%;
+}
+
+.comic {
+    font-family: built;
+    font-size: 4rem;
+    color: #265F7F;
+}
+
+.icomic {
+    width: 30rem;
+    height: 25rem;
+}
+
+button {
+    border: none;
+}
+
+
+.buno {
+    animation: palpitar 0.5s linear infinite alternate;
+    -webkit-box-shadow: 1px 3px 49px -6px rgba(0, 0, 0, 0.85);
+    -moz-box-shadow: 1px 3px 49px -6px rgba(0, 0, 0, 0.85);
+    box-shadow: 1px 3px 49px -6px rgba(0, 0, 0, 0.85);
+    border-radius: 17px;
+}
+
+@keyframes palpitar {
+    0% {
+        transform: scale(1.10);
+    }
+
+    100% {
+        transform: scale(1.20);
+    }
+}
+
+.descri {
+    width: 65%;
+    background-color: #ededf4;
+    border: #4141AF solid 0.063rem;
+    border-radius: 4%;
+}
+
+.sobre {
+
+    align-items: center;
+    font-family: built;
+    font-size: 4rem;
+    color: #265F7F;
+}
+
+.presenta {
+    width: 65%;
+    background-color: #D3D3F2;
+    border: #265F7F solid 0.063rem;
+    border-radius: 4%;
+}
+
+.espa {
+    padding-bottom: 6.25rem;
+    padding-top: 6.25rem;
+}
+
+.yo {
+    -webkit-box-shadow: inset 0px 2px 25px 1px rgba(0, 0, 0, 0.74);
+    -moz-box-shadow: inset 0px 2px 25px 1px rgba(0, 0, 0, 0.74);
+    box-shadow: inset 0px 2px 25px 1px rgba(0, 0, 0, 0.74);
+}
+
+.boton-modal label {
+    font-family: built;
+    font-size: 1.5rem;
+    background-color: #D3D3F2;
+    border: #265F7F solid 0.063rem;
+    padding: .2rem 4rem;
+    cursor: pointer;
+    -webkit-box-shadow: -1px 2px 31px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 2px 31px -7px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 2px 31px -7px rgba(0, 0, 0, 0.75);
+}
+
+@media screen and (max-width:50rem) {
+    .mara {
+        font-size: 2rem;
+    }
+}
+
+.color {
+    color: #182718;
+    cursor: pointer;
+}
+
+.color:hover {
+    color: #4141AF;
+}
+
+.ver2 {
+    background-color: #D3D3F2;
+    border: #265F7F solid 0.063rem;
+    width: 20rem;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+}
+
+.parra {
+    font-family: TomySoftMedium;
+}
+
+.opi {
+    font-family: built;
+    font-size: 1.5rem;
+}
+
+
+.card-title {
+    font-family: built;
+    color: #4141AF;
+    font-size: 2.5rem;
+}
+
+.FF {
+    background-color: #d3d3f27c;
+}
+
+.bb {
+    height: 6rem;
+}
+
+.raton {
+    cursor: pointer;
+}
+
+.alert{
+    font-family: TomySoftMedium;
+    font-size: 1.1rem;
+}
